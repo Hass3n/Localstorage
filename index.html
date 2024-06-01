@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task(2)|js</title>
+
+  <!--fontaswom-->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!--font family-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <!--===========================Bootstrap==========================-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--===========================css==========================-->
+  <link rel="stylesheet" href="css/main.css">
+
+
+
+</head>
+
+<body>
+ 
+
+  <div class="container">
+  <form action="" class="my-5 w-75 mx-auto">
+    <div class="mb-3">
+      <input type="text" class="form-control" id="productName" placeholder="product Name" oninput="Validation(this)">
+   
+      <div class="alert alert-danger my-2 d-none" role="alert">
+        Product Name must be from 3 to 5 charecter.
+      </div>
+    
+    </div>
+    <div class="mb-3">
+      <input type="text" class="form-control" id="productPrice" placeholder="product Price" oninput="Validation(this)">
+      <div class="alert alert-danger my-2 d-none" role="alert">
+        you must write price.
+      </div>
+    </div>
+
+
+
+
+    <div class="mb-3">
+      <input type="text" class="form-control" id="productDescription" placeholder="product Description"  oninput="Validation(this)" >
+      <div class="alert alert-danger my-2 d-none" role="alert">
+        you must write Description of product.
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <input type="file" class="form-control" id="productImage" placeholder="product File" accept="image/*>
+    </div>
+    <div class="mb-3">
+      <select class="form-select form-select-lg mb-3 " aria-label="Large select example" id="selectcat"  oninput="Validation(this)"> 
+        <option selected>Open this select Category</option>
+        <option>labtop</option>
+        <option >tv</option>
+        <option >Pc</option>
+      </select>
+      <div class="alert alert-danger my-2 d-none" role="alert">
+        you must select Category.
+      </div>
+
+        </div>
+        <button type="button" class="btn btn-primary d-block ms-auto"
+         id="btnproduct" >add product</button>
+
+         <button type="button" class="btn btn-primary d-block ms-auto my-2 d-none"
+         id="btnupdate" >update product</button>
+
+
+         <div class="my-3">
+          <input type="text" class="form-control shadow-sm p-3" id="searchProduct" placeholder="Search">
+        </div>
+    
+
+  </form>
+
+  <div class="row" id="product">
+ 
+    
+  </div>
+
+
+  </div>
+  <script src="js/main.js"></script>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
